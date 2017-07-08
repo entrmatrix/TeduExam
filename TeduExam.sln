@@ -3,9 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26430.6
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeduExam", "TeduExam\TeduExam.csproj", "{011AD711-4B79-47DC-9A35-B032F343EB49}"
-EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{FFBFAA0A-3A9B-473B-90C4-2FF3ADD08815}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{7A9F0214-1C38-4851-ACB5-74F007B3A2CB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{1731F79C-0589-43F3-BD54-C62D43BB0113}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeduExam.WebApp", "TeduExam.WebApp\TeduExam.WebApp.csproj", "{A73BEA2A-07A9-4944-BBFC-954B4EA8D179}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeduExam.Core", "TeduExam.Core\TeduExam.Core.csproj", "{C23586C6-63A9-4DB5-9942-1432441317D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeduExam.Infrastructure", "TeduExam.Infrastructure\TeduExam.Infrastructure.csproj", "{7B697CFA-A5EF-48C3-8812-9DBCA5E4C447}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeduExam.Tests", "TeduExam.Tests\TeduExam.Tests.csproj", "{FED69D45-9904-4763-A9E1-CBA21D587314}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,16 +23,34 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{011AD711-4B79-47DC-9A35-B032F343EB49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{011AD711-4B79-47DC-9A35-B032F343EB49}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{011AD711-4B79-47DC-9A35-B032F343EB49}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{011AD711-4B79-47DC-9A35-B032F343EB49}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FFBFAA0A-3A9B-473B-90C4-2FF3ADD08815}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FFBFAA0A-3A9B-473B-90C4-2FF3ADD08815}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FFBFAA0A-3A9B-473B-90C4-2FF3ADD08815}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FFBFAA0A-3A9B-473B-90C4-2FF3ADD08815}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A73BEA2A-07A9-4944-BBFC-954B4EA8D179}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A73BEA2A-07A9-4944-BBFC-954B4EA8D179}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A73BEA2A-07A9-4944-BBFC-954B4EA8D179}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A73BEA2A-07A9-4944-BBFC-954B4EA8D179}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C23586C6-63A9-4DB5-9942-1432441317D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C23586C6-63A9-4DB5-9942-1432441317D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C23586C6-63A9-4DB5-9942-1432441317D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C23586C6-63A9-4DB5-9942-1432441317D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B697CFA-A5EF-48C3-8812-9DBCA5E4C447}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B697CFA-A5EF-48C3-8812-9DBCA5E4C447}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B697CFA-A5EF-48C3-8812-9DBCA5E4C447}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B697CFA-A5EF-48C3-8812-9DBCA5E4C447}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FED69D45-9904-4763-A9E1-CBA21D587314}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FED69D45-9904-4763-A9E1-CBA21D587314}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FED69D45-9904-4763-A9E1-CBA21D587314}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FED69D45-9904-4763-A9E1-CBA21D587314}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A73BEA2A-07A9-4944-BBFC-954B4EA8D179} = {7A9F0214-1C38-4851-ACB5-74F007B3A2CB}
+		{C23586C6-63A9-4DB5-9942-1432441317D1} = {7A9F0214-1C38-4851-ACB5-74F007B3A2CB}
+		{7B697CFA-A5EF-48C3-8812-9DBCA5E4C447} = {7A9F0214-1C38-4851-ACB5-74F007B3A2CB}
+		{FED69D45-9904-4763-A9E1-CBA21D587314} = {1731F79C-0589-43F3-BD54-C62D43BB0113}
 	EndGlobalSection
 EndGlobal

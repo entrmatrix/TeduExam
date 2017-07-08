@@ -6,3 +6,9 @@ services:
     build:
       context: ./TeduExam
       dockerfile: Dockerfile
+
+  teduexam.webapp:
+    image: teduexam.webapp
+    build:
+      context: ./TeduExam.WebApp
+      dockerfile: Dockerfile
