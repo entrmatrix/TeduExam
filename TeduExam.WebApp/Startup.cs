@@ -12,6 +12,7 @@ using TeduExam.Core.Interfaces;
 using TeduExam.Core.SharedKernel;
 using TeduExam.Infrastructure;
 using TeduExam.Infrastructure.Data;
+using TeduExam.Infrastructure.Repositories;
 
 namespace TeduExam.WebApp
 {

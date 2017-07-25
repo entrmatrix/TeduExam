@@ -4,8 +4,9 @@ using TeduExam.Core.Entities;
 using TeduExam.Core.Interfaces;
 using TeduExam.Core.Specifications;
 using Microsoft.EntityFrameworkCore;
+using TeduExam.Infrastructure.Data;
 
-namespace TeduExam.Infrastructure.Data
+namespace TeduExam.Infrastructure.Repositories
 {
     public class GuestbookRepository : EfRepository<Guestbook>, IGuestbookRepository
     {
